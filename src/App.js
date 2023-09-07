@@ -3,6 +3,7 @@ import "./App.css";
 import Counter from "./components/Counter";
 import Greeting from "./components/GreetingProp";
 import Todo from "./components/PracticeTodo";
+import NewsList from "./components/NewsList";
 
 function App() {
   const [obj, setObj] = useState({
@@ -31,7 +32,10 @@ function App() {
     const updatedUser = { ...obj, age: obj.age + 2 };
     setObj(updatedUser);
   }
-
+  function ChangeAddress() {
+    const updateAdd = { ...obj, location: (obj.location = "maharashtra") };
+    setObj(updateAdd);
+  }
   // const changeAge = () => {
   //   // Create a copy of the user object with the age updated
   //   const updatedUser = { ...obj, age: obj.age + 1 };
@@ -44,7 +48,7 @@ function App() {
       <Greeting name={"Akshata"} />
       <hr />
       {/* parenthesis doubt cleared */}
-      <h2>Pactice session for coding round</h2>
+      <h3>Pactice session for coding round</h3>
       {/* how to render all object value in dom using the map function */}
 
       <p>{obj.firstName}</p>
@@ -52,10 +56,13 @@ function App() {
       <p>{obj.location}</p>
       <button onClick={changeAgeArrowFun}>changeAgeArrowFun</button>
       <button onClick={NormalchangeAgeFunction}>NormalchangeAgeFunction</button>
+      <button onClick={ChangeAddress}>changeAddress</button>
       <hr />
       <Counter />
       <br />
       <Todo />
+      <br />
+      <NewsList />
     </div>
   );
 }
