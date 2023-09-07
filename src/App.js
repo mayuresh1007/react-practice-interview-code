@@ -50,13 +50,15 @@ function App() {
       {/* parenthesis doubt cleared */}
       <h3>Pactice session for coding round</h3>
       {/* how to render all object value in dom using the map function */}
+      <div>
+        <p>{obj.firstName}</p>
+        <p>{obj.age}</p>
+        <p>{obj.location}</p>
+        <button onClick={changeAgeArrowFun}>changeAgeArrowFun</button>
+        <button onClick={NormalchangeAgeFunction}>NormalchangeAgeFunction</button>
+        <button onClick={ChangeAddress}>changeAddress</button>
+      </div>
 
-      <p>{obj.firstName}</p>
-      <p>{obj.age}</p>
-      <p>{obj.location}</p>
-      <button onClick={changeAgeArrowFun}>changeAgeArrowFun</button>
-      <button onClick={NormalchangeAgeFunction}>NormalchangeAgeFunction</button>
-      <button onClick={ChangeAddress}>changeAddress</button>
       <hr />
       <Counter />
       <br />
