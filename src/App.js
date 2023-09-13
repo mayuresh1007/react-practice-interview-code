@@ -4,6 +4,8 @@ import Counter from "./components/Counter";
 import Greeting from "./components/GreetingProp";
 import Todo from "./components/PracticeTodo";
 import NewsList from "./components/NewsList";
+import DropDown from "./components/DropdownDepends";
+import Passwordgenerator from "./components/Passwordgenerator";
 
 function App() {
   const [obj, setObj] = useState({
@@ -55,7 +57,9 @@ function App() {
         <p>{obj.age}</p>
         <p>{obj.location}</p>
         <button onClick={changeAgeArrowFun}>changeAgeArrowFun</button>
-        <button onClick={NormalchangeAgeFunction}>NormalchangeAgeFunction</button>
+        <button onClick={NormalchangeAgeFunction}>
+          NormalchangeAgeFunction
+        </button>
         <button onClick={ChangeAddress}>changeAddress</button>
       </div>
 
@@ -65,6 +69,10 @@ function App() {
       <Todo />
       <br />
       <NewsList />
+      <br />
+      <DropDown />
+      <br />
+      <Passwordgenerator/>
     </div>
   );
 }

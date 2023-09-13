@@ -34,7 +34,7 @@ const NewsList = () => {
   };
 
   useEffect(() => {
-    fetchNews();
+    // fetchNews();
     console.log("api called");
   }, []);
 
@@ -42,7 +42,7 @@ const NewsList = () => {
   return (
     <>
       <div>
-        <h3>NewsList</h3>
+        <h3>NewsList fetch api with useEffect</h3>
         {news == null ? (
           <h1>No news found !!!</h1>
         ) : (
