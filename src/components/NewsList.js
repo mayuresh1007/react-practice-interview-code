@@ -38,7 +38,7 @@ const NewsList = () => {
     console.log("api called");
   }, []);
 
-  console.log(news);
+  // console.log(news);
   return (
     <>
       <div>

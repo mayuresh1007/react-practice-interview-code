@@ -6,6 +6,9 @@ import Todo from "./components/PracticeTodo";
 import NewsList from "./components/NewsList";
 import DropDown from "./components/DropdownDepends";
 import Passwordgenerator from "./components/Passwordgenerator";
+import ControlledComponent from "./components/ControlledComponent";
+import UncontrolledComponent from "./components/UncontrolledCompo";
+import Usememoexample from "./components/UseMemo";
 
 function App() {
   const [obj, setObj] = useState({
@@ -72,7 +75,15 @@ function App() {
       <br />
       <DropDown />
       <br />
-      <Passwordgenerator/>
+      <Passwordgenerator />
+      <br />
+      
+      <br />
+      <ControlledComponent />
+      <br />
+      <UncontrolledComponent />
+      <br />
+      <Usememoexample/>
     </div>
   );
 }
